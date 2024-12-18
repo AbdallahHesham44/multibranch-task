@@ -56,7 +56,8 @@ pipeline {
             steps {
                 script {
                     // Deploy to Kubernetes using the shared library
-                    deployToKubernetes(NAMESPACE)
+                    // deployToKubernetes(NAMESPACE)
+                    kubectl apply -f deployment.yaml
                 }
             }
         }
