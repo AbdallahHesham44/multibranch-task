@@ -1,4 +1,4 @@
-@Library("shared-library@main") _  // Import the shared library
+@Library("Shared-lib@main") _  // Import the shared library
 
 pipeline {
     agent { label 'slave01' }
