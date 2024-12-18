@@ -1,12 +1,12 @@
 @Library("shared-library@main") _  // Import the shared library
 
 pipeline {
-    agent { label 'slave01' }
+    agent any
 
     environment {
         DOCKER_IMAGE_NAME = 'ivolve'
-        DOCKER_HUB_REPO = 'ahmedmahmood44'
-        DOCKER_HUB_CREDENTIALS = credentials('Docker')
+        DOCKER_HUB_REPO = 'AbdallahHesham44'
+        DOCKER_HUB_CREDENTIALS = credentials('docker-cred')
         NAMESPACE = ""
     }
 
