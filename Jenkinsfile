@@ -57,7 +57,7 @@ pipeline {
                 script {
                     // Deploy to Kubernetes using the shared library
                     // deployToKubernetes(NAMESPACE)
-                    kubectl apply -f deployment.yaml
+                    kubectl --kubeconfig=/home/abdallah/jenkins/.kube/config  apply -f deployment.yaml
                 }
             }
         }
